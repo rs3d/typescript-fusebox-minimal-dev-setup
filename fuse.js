@@ -23,13 +23,13 @@ const config = {
 
 const fuse = FuseBox.init({
   homeDir: config.basePath,
-  target: "browser@es6",
+  target: "browser@es5",
   output: "dist/$name.js",
   sourceRoot : "/src", 
   sourceMaps: {
     inline: false,
     project: true,
-    vendor: true,
+    // vendor: true,
   },
   plugins: [
     HTMLPlugin(),

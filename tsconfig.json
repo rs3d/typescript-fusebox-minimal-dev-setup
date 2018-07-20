@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "outDir": "./ts-out",
+    "target": "es6",                          
+    "module": "esnext",                    
+    "moduleResolution": "node",
+    "lib": [
+      "es5",
+      "es6",
+      "esnext"
+    ],
+    "strict": true,                     
+    "strictNullChecks": false,      
+    "noImplicitAny": false,        
+    "noUnusedLocals": false,         
+    "esModuleInterop": true,                  
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_module/@types"
+    ],
+    "types": [
+      "node",
+      "fuse-box"
+    ],
+    "traceResolution": false
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "ts-out",
+    "dist",
+    "build",
+    "node_modules"
+  ]
+}
